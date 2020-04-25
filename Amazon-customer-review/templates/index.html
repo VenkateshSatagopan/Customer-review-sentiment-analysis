@@ -1,0 +1,31 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+<div class="container">
+  <div class="jumbotron" style="background-color:#1daeff !important;">
+    <h2 style="color:#fff;">Sentiment Analysis</h2>      
+    <p style="color:#fff;">Using Deep Learning to Classify sentiments</p>
+  </div>
+  <p>DL App.</p>           
+</div>
+
+<div class="panel-group">
+    <div class="panel panel-primary">
+      <div class="panel-heading" style="background-color:#1563ff ">Sentiment Analysis</div>
+      <div class="panel-body">
+
+     <form action="{{url_for('predict_sentiment')}}"  method="POST">
+        <input type="text" name="text">
+        <button type="submit" class="btn btn-primary"> Predict
+        </button>
+      </form>
+      
+</div>
+</div>
+
+{% endblock %}
+
+{%block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static',filename='css/style.css')}}">   
+      {% endblock %}

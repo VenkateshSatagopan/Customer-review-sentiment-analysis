@@ -1,0 +1,45 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+
+
+<div class="container">
+  <div class="jumbotron" style="background-color:#1daeff !important;">
+    <h2 style="color:#fff;">Sentiment Analysis</h2>      
+    <p style="color:#fff;">Using Deep Learning to Classify Sentiment</p>
+  </div>
+  <p>DL App.</p>           
+</div>
+
+<div class="card text-center">
+  <div class="card-header">
+    Results
+  </div>
+  <div class="card-body" style="background-color:#1daeff;">
+    <h5 class="card-title">Sentiment Analysis</h5>
+    <hr/>
+    <p class="card-text"><div class="alert alert-danger" role="alert">
+  {{ name }}
+</div></p>
+
+<!-- Main ML Prediction Display Here -->
+<p class="card-text"><div class="alert alert-danger" role="alert">
+  {{predictions}}
+</div></p>
+    
+  </div>
+
+<!-- Main ML Prediction Display Ends Here -->
+  <div class="card-footer text-muted">
+   
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='css/style.css')}}">
+{% endblock %}

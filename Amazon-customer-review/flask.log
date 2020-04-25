@@ -1,0 +1,7 @@
+2020-04-25 10:43:15,430 INFO root MainThread : Model and Vocabulary loaded.....
+2020-04-25 10:43:16,353 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-25 10:44:33,598 INFO werkzeug Thread-1 : 127.0.0.1 - - [25/Apr/2020 10:44:33] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-25 10:44:33,907 INFO werkzeug Thread-2 : 127.0.0.1 - - [25/Apr/2020 10:44:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2020-04-25 10:44:35,345 INFO werkzeug Thread-3 : 127.0.0.1 - - [25/Apr/2020 10:44:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-25 10:44:51,920 INFO sentiment_analysis_final Thread-4 : Prediction :[-0.674677]sentiment:Negative
+2020-04-25 10:44:51,929 INFO werkzeug Thread-4 : 127.0.0.1 - - [25/Apr/2020 10:44:51] "[37mPOST /seclassifier HTTP/1.1[0m" 200 -
