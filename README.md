@@ -1,4 +1,4 @@
-# Customer-review-sentiment-analysis
+# Customer-review-sentiment-analysis using LSTM
 Amazon personal health care customer review sentiment analysis, GUI development using flask and model deployment using docker
 
 Data Collection:
@@ -7,7 +7,7 @@ Data collected from Amazon personal health care products customer reviews. Senti
 
 Main Contributions in the project:
 
-1. Data Preparation, LSTM based sentiment analysis model training
+1. Data Preparation, Bidirectional LSTM based sentiment analysis model training
 
 2. Creating a Flask based GUI to deploy the model.
 
@@ -15,6 +15,7 @@ Main Contributions in the project:
 
 
 sentiment-analysis-final.py contains the code for testing the LSTM model using Flask GUI. The Web-GUI looks as shown below:
+https://github.com/VenkateshSatagopan/Customer-review-sentiment-analysis/blob/master/Amazon-customer-review/Final-page.PNG
 
 
 
