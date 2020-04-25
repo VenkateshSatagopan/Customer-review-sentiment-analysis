@@ -7,7 +7,7 @@ Data collected from Amazon personal health care products customer reviews. Senti
 
 Main Contributions in the project:
 
-1. Data Preparation, Bidirectional LSTM based sentiment analysis model training
+1. Data Preparation, Bidirectional LSTM based sentiment analysis model training (This part is inspired from the videos on scaling machine learning models by srivatsan srinivasn sir https://www.youtube.com/playlist?list=PL3N9eeOlCrP7_vt6jq7GdJz6CSFmtTBpI) 
 
 2. Creating a Flask based GUI to deploy the model.
 
