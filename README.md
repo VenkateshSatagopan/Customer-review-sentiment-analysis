@@ -15,7 +15,7 @@ Main Contributions in the project:
 
 
 sentiment-analysis-final.py contains the code for testing the LSTM model using Flask GUI. The Web-GUI looks as shown below:
-![Sentiment analyser GUI] https://github.com/VenkateshSatagopan/Customer-review-sentiment-analysis/blob/master/Amazon-customer-review/Final-page.PNG
+![Sentiment analyser GUI] (https://github.com/VenkateshSatagopan/Customer-review-sentiment-analysis/blob/master/Amazon-customer-review/Final-page.PNG)
 
 
 
