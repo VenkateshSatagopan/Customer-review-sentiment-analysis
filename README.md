@@ -11,8 +11,8 @@ Main Contributions in the project:
 
 2. Creating a Flask based GUI to deploy the model.
 
-3. Containerize the application using Docker
-
+3. Containerize the application using Docker 
+Steps to run the docker can be found from running-docker.txt
 
 sentiment-analysis-final.py contains the code for testing the LSTM model using Flask GUI. The Web-GUI looks as shown below:
 
