@@ -22,12 +22,12 @@ pipeline {
 			 }*/
 			 stage('Build Image') {
 			 steps {
-			 bat 'docker build -t mynlpmodel:v1 Amazon-customer-review/'
+			 bat 'docker build -t mynlpmodel:latest Amazon-customer-review/'
 			 }
 			 }
 			 stage('Run Image') {
 			 steps {
-			 bat 'docker run -d -p 5000:4000 mynlpmodel:v1'
+			 bat 'docker run -d -p 5000:4000 mynlpmodel:latest'
 			 }
 			 }
 			 stage('Testing') {
