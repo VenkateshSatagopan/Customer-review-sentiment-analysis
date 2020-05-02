@@ -12,9 +12,10 @@ Main Contributions in the project:
 2. Creating a Flask based GUI to deploy the model.
 
 3. Containerize the application using Docker 
-Steps to run the docker can be found from running-docker.txt
+Steps to run the docker can be found from docker-running-steps.txt
+https://github.com/VenkateshSatagopan/Customer-review-sentiment-analysis/blob/master/Amazon-customer-review/docker-running-steps.txt
 
-sentiment-analysis-final.py contains the code for testing the LSTM model using Flask GUI. The Web-GUI looks as shown below:
+sentiment-analysis-final.py contains the code for testing the LSTM model using Flask GUI. The Web-GUI output looks as shown below:
 
 ![Sentiment analyser GUI](https://github.com/VenkateshSatagopan/Customer-review-sentiment-analysis/blob/master/Amazon-customer-review/Final-page.PNG)
 
