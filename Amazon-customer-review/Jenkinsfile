@@ -7,6 +7,12 @@ pipeline {
 			 checkout scm
 			 }
 			 }
+			 stage ('Check current directory') {
+			 /* Cloning the repository to the workspace */
+			 steps {
+			 bat 'pwd'
+			 }
+			 }
 			 /*stage('Build Image') {
 			 steps {
 			 bat 'docker build -t mynlpmodel:v1 .'
