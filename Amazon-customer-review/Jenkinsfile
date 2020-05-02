@@ -16,7 +16,7 @@ pipeline {
 			 stage ('UnZIP the model file') { 
 		         /* unzip the model file */
 		         steps {
-                         unzip zipFile: 'sentiment-analysis.zip', dir: 'Amazon-customer-review/'
+                         unzip( zipFile: 'sentiment-analysis.zip', dir: 'Amazon-customer-review/'
                          }
 			 }
 			 /*stage ('Change the directory') {
