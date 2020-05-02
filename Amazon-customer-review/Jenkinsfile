@@ -7,11 +7,6 @@ pipeline {
 			 checkout scm
 			 }
 			 }
-			 stage('Check path') {
-		         steps{
-			      bat 'docker ps'
-		         }
-			 }
 			 /*stage('Build Image') {
 			 steps {
 			 bat 'docker build -t mynlpmodel:v1 .'
