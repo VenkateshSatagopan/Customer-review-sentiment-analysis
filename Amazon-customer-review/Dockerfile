@@ -14,8 +14,8 @@ RUN pip install py-healthcheck
 RUN pip install tensorflow-datasets
 RUN pip install Flask-Bootstrap
 
-#Open port 5000
-EXPOSE 5000
+#Open port 4000
+EXPOSE 4000
 
 #Set environment variable
 ENV NAME OpentoAll
