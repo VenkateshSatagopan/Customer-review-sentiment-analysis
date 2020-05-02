@@ -13,13 +13,19 @@ pipeline {
 			 bat 'docker ps'
 			 }
 			 }
+			 stage ('UnZIP the model file') { 
+		         /* unzip the model file */
+		         steps {
+                         unzip zipFile: 'sentiment-analysis.zip', dir: 'Amazon-customer-review/'
+                         }
+			 }
 			 /*stage ('Change the directory') {
 			 Checking whether the docker is working fine  
 			 steps {
 			 bat 'cd Amazon-customer-review'
 		         bat 'pwd'
 			 }
-			 }*/
+			 }
 			 stage('Build Image') {
 			 steps {
 			 bat 'docker build -t mynlpmodel:latest Amazon-customer-review/'
@@ -29,7 +35,7 @@ pipeline {
 			 steps {
 			 bat 'docker run -p 5000:4000 mynlpmodel:latest'
 			 }
-			 }
+			 }*/
 			 stage('Testing') {
 			 steps {
 			 bat 'echo %PATH%'
