@@ -19,7 +19,7 @@ sentiment-analysis-final.py contains the code for testing the LSTM model using F
 
 ![Sentiment analyser GUI](https://github.com/VenkateshSatagopan/Customer-review-sentiment-analysis/blob/master/Amazon-customer-review/Final-page.PNG)
 
-
+4. Implementing CI/CD pipeline using Jenkins to automate the deployment steps and automatically build the project from jenkins by pulling the code from github.
 
 
 
