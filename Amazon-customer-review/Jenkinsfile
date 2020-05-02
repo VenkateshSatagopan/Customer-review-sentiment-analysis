@@ -7,10 +7,10 @@ pipeline {
 			 checkout scm
 			 }
 			 }
-			 stage ('Check current directory') {
+			 stage ('Check docker is working') {
 			 /* Cloning the repository to the workspace */
 			 steps {
-			 bat 'pwd'
+			 bat 'docker ps'
 			 }
 			 }
 			 /*stage('Build Image') {
