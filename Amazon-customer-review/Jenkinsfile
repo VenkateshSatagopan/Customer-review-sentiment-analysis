@@ -7,7 +7,12 @@ pipeline {
 			 checkout scm
 			 }
 			 }
-			 stage('Build Image') {
+			 stage('Check path') {
+		         steps{
+			      bat 'docker ps'
+		         }
+			 }
+			 /*stage('Build Image') {
 			 steps {
 			 bat 'docker build -t mynlpmodel:v1 .'
 			 }
@@ -16,7 +21,7 @@ pipeline {
 			 steps {
 			 bat 'docker run -d -p 5000:4000 --name nlpmodel mynlpmodel:v1'
 			 }
-			 }
+			 }*/
 			 stage('Testing') {
 			 steps {
 			 bat 'echo %PATH%'
