@@ -13,12 +13,12 @@ pipeline {
 			 bat 'docker ps'
 			 }
 			 }
-			 stage ('Change the directory') {
-			 /* Checking whether the docker is working fine */
+			 /*stage ('Change the directory') {
+			  Checking whether the docker is working fine 
 			 steps {
 			 bat 'cd Amazon-customer-review\'
 			 }
-			 }
+			 }*/
 			 stage('Build Image') {
 			 steps {
 			 bat 'docker build -t mynlpmodel:v1 .'
