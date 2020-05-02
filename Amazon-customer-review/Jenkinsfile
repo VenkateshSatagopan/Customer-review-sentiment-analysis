@@ -13,13 +13,14 @@ pipeline {
 			 bat 'docker ps'
 			 }
 			 }
-			 /*stage ('Change the directory') {
-			  Checking whether the docker is working fine 
+			 stage ('Change the directory') {
+			 /*Checking whether the docker is working fine  */
 			 steps {
-			 bat 'cd Amazon-customer-review\'
+			 bat 'cd Amazon-customer-review'
+		         bat 'pwd'
 			 }
-			 }*/
-			 stage('Build Image') {
+			 }
+			 /*stage('Build Image') {
 			 steps {
 			 bat 'docker build -t mynlpmodel:v1 Amazon-customer-review\'
 			 }
@@ -28,7 +29,7 @@ pipeline {
 			 steps {
 			 bat 'docker run -d -p 5000:4000 --name nlpmodel Amazon-customer-review\mynlpmodel:v1'
 			 }
-			 }
+			 }*/
 			 stage('Testing') {
 			 steps {
 			 bat 'echo %PATH%'
